@@ -1,4 +1,4 @@
-from audioop import reverse
+
 from src.python_functions_practice import *
 
 import unittest
@@ -83,24 +83,22 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
   def test_volume_of_cube(self):
-    return self * self * self
-    pass
+    volume = volume_of_cube(3)
+    self.assertEqual(27, volume)
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
-  def test_reverse_string(text):
-    return text[::-1]
+  def test_reverse_string(self):
+    reversed_string = reverse_string("Scotland")
+    self.assertEqual("dnaltocS", reversed_string)
 
-  my_text = ("this is the text to reverse")
-  pass
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+  celcuius = (15)
   def test_fahrenheit_to_celsius(self):
     #add test code here
-    pass
+    result = fahrenheit_to_celcius(0)
+    self.assertEqual(-17.78, result)
 
 
 if __name__ == '__main__':
